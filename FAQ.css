@@ -10,7 +10,6 @@ body{
     background-color: #edf2ff;
 }
 span{
-
     margin-top: 50px;
 
 
@@ -30,6 +29,7 @@ span{
 .text{
 font-size: 32px;
 margin-right: 35px;
+
 }
 .main-container{
     width: 60%;
@@ -38,6 +38,8 @@ margin-right: 35px;
     margin-bottom: 20px;
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
     
 }
 .secondary-container{
@@ -45,6 +47,7 @@ margin-right: 35px;
     align-items: center;
     justify-content: center;
     width: 50%;
+    
     
 }
 .question{
@@ -54,6 +57,9 @@ margin-right: 35px;
     justify-content: center;
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
 
 }
 .icon{
@@ -69,7 +75,7 @@ margin-right: 35px;
     font-size: 28px;
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
-    transition: 200ms;
+    
 }
 .hide{
     display: none;
@@ -82,5 +88,13 @@ margin-right: 35px;
     fill: #bac8ff;
     rotate: 90deg;
    transition: 200ms;
+
+}
+.top-border{
+
+
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-top: 5px solid #364fc7 ;
 
 }
