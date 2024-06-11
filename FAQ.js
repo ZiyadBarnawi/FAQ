@@ -1,14 +1,14 @@
 "use strict"
-// I swear to allah I learned an easier way of doing this but my ego is way too high
 
 
 
 let icons=document.querySelectorAll(".icon");
 let hiddenTexts=document.querySelectorAll(".hidden-text")
-
+let spans=document.querySelectorAll("span")
 const switchState=function func1(icon){
     if(icon.target===icons[0])
         {hiddenTexts[0].classList.toggle("hide")
+        spans[0].classList.toggle("top-border")
          icons[0].classList.toggle("active-icon")  
          icons[1].classList.remove("active-icon") 
          hiddenTexts[1].classList.add("hide") 
@@ -17,6 +17,7 @@ const switchState=function func1(icon){
         }
     else if(icon.target===icons[1])
         {hiddenTexts[1].classList.toggle("hide")
+        spans[1].classList.toggle("top-border")
          icons[1].classList.toggle("active-icon")  
          icons[0].classList.remove("active-icon") 
          hiddenTexts[0].classList.add("hide") 
@@ -25,6 +26,8 @@ const switchState=function func1(icon){
         }
     else if(icon.target===icons[2])
         {hiddenTexts[2].classList.toggle("hide")
+        spans[2].classList.toggle("top-border")
+
          icons[2].classList.toggle("active-icon")  
          icons[1].classList.remove("active-icon") 
          hiddenTexts[1].classList.add("hide") 
